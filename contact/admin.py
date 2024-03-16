@@ -11,3 +11,8 @@ class ContractAdmin(admin.ModelAdmin):
     list_per_page = 20
     list_max_show_all = 500
     list_display_links = 'first_name',
+
+@admin.register(models.Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = 'name',
+    ordering = 'id',
