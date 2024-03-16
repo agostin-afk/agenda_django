@@ -3,7 +3,7 @@ from contact import models
 
 @admin.register(models.Contact)
 class ContractAdmin(admin.ModelAdmin):
-    list_display = 'id','first_name','last_name', 'phone',
+    list_display = 'id','first_name','last_name', 'phone','category',
     list_filter = 'created_date',
     ordering = ()
     search_fields = 'id', 'first_name', 'last_name',
