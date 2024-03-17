@@ -1,1 +1,6 @@
 {% extends "global/base.html" %}
+{%block content%}
+{% for contatc in contacts %}
+{{contatc.first_name}}<br>
+{% endfor %}
+{%endblock content%}
