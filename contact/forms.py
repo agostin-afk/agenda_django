@@ -29,11 +29,10 @@ class ContactForm(forms.ModelForm):
                 )
     def clean(self):
         #cleaned_data = self.cleaned_data
-        self.add_error(
-            None,
-            ValidationError(
-                'mensagem de erro',
+        msg =  ValidationError(
+                'campos inválidos, first_name = last_name',
                 code='invalid'
             )
-        )
+        self.add_error('first_name',msg)
+        self.add_error('last_name',msg)
         return super().clean()
