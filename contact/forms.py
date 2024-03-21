@@ -25,7 +25,10 @@ class ContactForm(forms.ModelForm):
         fields = (
             'first_name',
             'last_name',
-            'phone',  
+            'phone',
+            'email',
+            'description',
+            'category',
                 )
     def clean(self):
         #cleaned_data = self.cleaned_data
@@ -33,6 +36,9 @@ class ContactForm(forms.ModelForm):
                 'campos inválidos, first_name = last_name',
                 code='invalid'
             )
-        self.add_error('first_name',msg)
-        self.add_error('last_name',msg)
+        first_name = self.cleaned_data.get('first_name')
+        last_name = self.cleaned_data.get('last_name')
+        if first_name == last_name:
+            self.add_error('first_name',msg)
+            self.add_error('last_name',msg)
         return super().clean()
