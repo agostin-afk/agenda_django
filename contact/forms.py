@@ -5,6 +5,7 @@ from django.forms.utils import ErrorList
 from contact.models import Contact
 from django.core.exceptions import ValidationError
 from django import forms
+from django.contrib.auth.forms import UserCreationForm
 
 class ContactForm(forms.ModelForm):
     picture = forms.ImageField(
@@ -50,3 +51,6 @@ class ContactForm(forms.ModelForm):
             self.add_error('first_name',msg)
             self.add_error('last_name',msg)
         return super().clean()
+
+class RegisterForm(UserCreationForm):
+    ...
