@@ -49,7 +49,7 @@ def update_user_view(request):
         form = RegisterUpdateForm(data= request.POST, instance= request.user)
         if form.is_valid():
             form.save()
-            return redirect('contact:user_update')
+            return redirect('contact:login')
     return render(
         request,
         'contact/user_update.html',
