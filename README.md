@@ -50,6 +50,7 @@ sqlparse==0.4.4
 tzdata==2024.1
 ```
 
-
+## Tela inicial:
+![Tela inicial da Agenda feita com Django](media_github\tela_inicial.png)
 
 
