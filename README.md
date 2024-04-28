@@ -49,8 +49,40 @@ six==1.16.0
 sqlparse==0.4.4
 tzdata==2024.1
 ```
-
 ## Tela inicial:
-![Tela inicial da Agenda feita com Django](https://private-user-images.githubusercontent.com/67163625/326260336-3bc95097-981b-4b9c-a847-47aecb1bb40f.png?jw)
+<div align= "center">
+<img src="https://github.com/agostin-afk/agenda_django/assets/67163625/f0572f77-293a-4454-a784-a4e80272e0c5" width="800">
+</div>
 
 
+Caso não esteja logado essa será a tela inicial.
+Os dados desse exemplo foram criados usando a biblioteca Faker.
+<br></br>
+## Quando logado e exemplos de funcionalidades:
+#### - Tela quando efetuar o login:
+<div align= "center">
+<img src="https://github.com/agostin-afk/agenda_django/assets/67163625/819ffee0-29ce-440a-b95e-99702ac55b98" width="800">
+</div>
+
+<br></br>
+
+### - Exemplo de pesquisa:
+
+<div align= "center">
+<img src="https://github.com/agostin-afk/agenda_django/assets/67163625/4643948e-3365-478a-81bc-91e31053a0e2" width="800">
+</div>
+<br></br>
+
+### - Página de contato único:
+
+<div align= "center">
+<img src="https://github.com/agostin-afk/agenda_django/assets/67163625/184c6a87-7d49-44eb-9f74-dfec3f6f0549" width="800">
+</div>
+<br></br>
+
+### - Página de criação de contato:
+
+<div align= "center">
+<img src="https://github.com/agostin-afk/agenda_django/assets/67163625/8da1fa3d-1ecb-40e5-986e-442a92140389" width="800">
+</div>
+<br></br>
