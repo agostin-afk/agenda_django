@@ -23,11 +23,13 @@ A criação de um sistema simulando uma agenda telefônica com certo nível de v
 Rode esses comandos no terminal da raiz do projeto:
 
 ```bash
-python -m venv NomeDoSeuAmbienteVirtual
-.\NomeDoSeuAmbienteVirtual\Scripts\Activate.ps1
-pip install requirements.txt
+python -m venv nome_ambienteVirtual
+nome_ambienteVirtual/Scripts/Activate.ps1
+pip install -r requirements.txt
+python manage.py collectstatic
 python manage.py makemigrations
 python manage.py migrate
+python manage.py ceatesuperuser
 python manage.py runserver
 ```
 _para algumas funcionalidades é preciso criar um super usuario_:
