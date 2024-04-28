@@ -51,6 +51,6 @@ tzdata==2024.1
 ```
 
 ## Tela inicial:
-![Tela inicial da Agenda feita com Django](media_github\tela_inicial.png)
+![Tela inicial da Agenda feita com Django](https://private-user-images.githubusercontent.com/67163625/326260336-3bc95097-981b-4b9c-a847-47aecb1bb40f.png?jw)
 
 
