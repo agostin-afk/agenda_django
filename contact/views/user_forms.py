@@ -20,17 +20,19 @@ def register(request):
             'form': form,
         },
     )
+
+
 def login_view(request):
     form = AuthenticationForm(request)
     if request.method == 'POST':
-        form = AuthenticationForm(request, data= request.POST)
+        form = AuthenticationForm(request, data=request.POST)
         if form.is_valid():
             user = form.get_user()
-            messages.success(request,'Logado com sucesso')
+            messages.success(request, 'Logado com sucesso')
             auth.login(request, user)
             return redirect('contact:index')
         messages.error(request, 'Login inválido')
-        
+
     return render(
         request,
         'contact/login.html',
@@ -39,18 +41,18 @@ def login_view(request):
         }
     )
 
-@login_required(login_url='contact:login')
 
+@login_required(login_url='contact:login')
 def logout_view(request):
     auth.logout(request)
     return redirect('contact:login')
 
+
 @login_required(login_url='contact:login')
 def update_user_view(request):
-    
-    form = RegisterUpdateForm(instance= request.user)
+    form = RegisterUpdateForm(instance=request.user)
     if request.method == 'POST':
-        form = RegisterUpdateForm(data= request.POST, instance= request.user)
+        form = RegisterUpdateForm(data=request.POST, instance=request.user)
         if form.is_valid():
             form.save()
             return redirect('contact:login')
