@@ -56,16 +56,15 @@ Para usar Agenda de Telefone, siga estas etapas:
 <python manage.py runserver>
 ```
 
-## Tela inicial:
+## 🖥️ Tela inicial:
 <div align= "center">
 <img src="https://github.com/agostin-afk/agenda_django/assets/67163625/f0572f77-293a-4454-a784-a4e80272e0c5" width="800">
 </div>
 
 
-Caso não esteja logado essa será a tela inicial.
-Os dados desse exemplo foram criados usando a biblioteca Faker.
+>Caso não esteja logado essa será a tela inicial. Os dados desse exemplo foram criados usando a biblioteca Faker.
 <br></br>
-## Quando logado e exemplos de funcionalidades:
+## 👨‍💻 Quando logado e exemplos de funcionalidades:
 #### - Tela quando efetuar o login:
 <div align= "center">
 <img src="https://github.com/agostin-afk/agenda_django/assets/67163625/819ffee0-29ce-440a-b95e-99702ac55b98" width="800">
