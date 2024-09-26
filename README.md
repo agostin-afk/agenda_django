@@ -37,7 +37,7 @@ Para instalar o Agenda de Telefone, siga estas etapas:
 Windows, Linux e macOS:
 
 ```
-<pip install -r requirements.txt>
+pip install -r requirements.txt
 ```
 
 ## ☕ Usando Agenda de Telefone
@@ -45,15 +45,15 @@ Windows, Linux e macOS:
 Para usar Agenda de Telefone, siga estas etapas:
 - Crie um super-usuario
 ```
-<python manage.py createsuperuser>
+python manage.py createsuperuser
 ```
 - Faça as migrações
 ``` 
-<python manage.py makemigrations && python manage.py migrate>
+python manage.py makemigrations && python manage.py migrate
 ```
 - Inicie o servidor
 ``` 
-<python manage.py runserver>
+python manage.py runserver
 ```
 
 ## 🖥️ Tela inicial:
